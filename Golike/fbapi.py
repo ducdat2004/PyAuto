@@ -1,0 +1,7 @@
+import requests
+headers = {
+	"Cookie" : "datr=8i_oZPhiYIx8j4Z5Jou1rGwM; sb=KTDoZFLEyJJtMi-50gSLf0lA; locale=vi_VN; c_user=100063697524677; xs=12%3ADBqvpHub6Gtl8Q%3A2%3A1693189342%3A-1%3A6246; fr=0cSyLDUrqa2KXmkeF.AWWKLsekMwMOuoX5-semIWOqJOQ.Bk7AOT.ng.AAA.0.0.Bk7ATf.AWUPxkGTkBg; i_user=100094429921286; m_ls=%7B%22c%22%3A%7B%221%22%3A%22HCwAABaUzSQW_tLyugYTBRaK36rSvMAtAA%22%2C%222%22%3A%22GSwVQBxMAAAWABaIy7DODBYAABV-HEwAABYEFvrKsM4MFgAAFigA%22%2C%2295%22%3A%22HCwAABaYCha6lt_cDxMFForfqtK8wC0A%22%7D%2C%22d%22%3A%22cb76b311-f844-4fac-99ff-c8611053b3f3%22%2C%22s%22%3A%220%22%2C%22u%22%3A%221way7y%22%7D; usida=eyJ2ZXIiOjEsImlkIjoiQXMwMngwMGVmaTdpbyIsInRpbWUiOjE2OTMxODkzNjV9; dpr=1.125; wd=1076x786",
+	"Content-Type" : "application/x-www-form-urlencoded"
+}
+s = requests.post('https://graph.facebook.com/100094429921286_3440942569452333/likes?access_token=EAAGNO4a7r2wBO7G0G5ZC7wxZBEKNLzGVPRGToZBIX2ZC3mOGUFpAyWp1Na8POK09nzPc7CMxXHYNbtxnDp7gGGSpiZBtJTZBU4BKD32sACTI4LFI8lH3gOe3sJQDLTTjvPReCLPhvRX8OWlMlOyUDxO7zZCKAnWSbnY3Q5ih8fMgEsZAH3uwQz8eFyI1DwZDZD', headers=headers)
+print(s.json())
